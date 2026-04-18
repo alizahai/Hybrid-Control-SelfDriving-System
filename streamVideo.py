@@ -10,8 +10,7 @@ Args:
 Yields:
     file (str): Video filename
     frame (ndarray): Current frame (BGR format)
-    frame_count (int): Frame index (starts from 1)
-
+    
 Usage:
     for name, frame, idx in video_stream("H:/data"):
         # process frame (lane detection, object detection, etc.)
