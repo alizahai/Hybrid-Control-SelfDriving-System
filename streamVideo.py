@@ -12,9 +12,9 @@ Yields:
     frame (ndarray): Current frame (BGR format)
     
 Usage:
-    for name, frame, idx in video_stream("H:/data"):
+    for name, frame in video_stream("H:/data"):
         # process frame (lane detection, object detection, etc.)
-        pass
+        ...
 """
 
 def video_stream(folder_path):
