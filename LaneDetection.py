@@ -193,10 +193,10 @@ def detect_boundary(frame):
 
 def draw(frame, edges, left, right):
     """
-        Draws detected lane lines and green overlay polygon on the frame.
+        Draws detected lane lines on the frame.
         Applies EMA smoothing using previous frame detections to reduce flickering.
         Resets stale lanes after MISS_LIMIT consecutive missed detections.
-        Returns edge map (with overlaid lines) and final annotated result frame.
+        Returns edge map (with overlaid lines).
     """
     global prev_left, prev_right, left_miss, right_miss
 
