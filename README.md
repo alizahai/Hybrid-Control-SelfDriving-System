@@ -27,7 +27,7 @@ three-camera multi-stream pipeline with a fused decision engine.
 ## Project structure
 
 ```
-Hybrid-Control-SelfDriving-System/
+project/
 │
 ├── LaneDetection.py        # Road boundary detection (front camera)
 ├── object_detection.py     # YOLOv8s obstacle detection and road zone check
