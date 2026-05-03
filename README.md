@@ -25,6 +25,8 @@ three-camera multi-stream pipeline with a fused decision engine.
 ---
 
 ## Project structure
+
+```
 Hybrid-Control-SelfDriving-System/
 │
 ├── LaneDetection.py        # Road boundary detection (front camera)
@@ -33,15 +35,14 @@ Hybrid-Control-SelfDriving-System/
 ├── autonomous_car.py       # Single-stream pipeline — main entry point
 │
 └── multi_stream/
-├── main.py             # Entry point — choose single or multi-stream mode
-├── config.py           # Video paths, frame sizes, stream assignments
-├── lane_detector.py    # Class-based lane detector for front camera
-├── side_detector.py    # Road boundary detector for left/right cameras
-├── stream_manager.py   # Orchestrates 3 streams, YOLO thread, grid display
-├── walkthrough.md      # Detailed technical walkthrough of multi-stream
-└── README.md           # Multi-stream module documentation
-
----
+    ├── main.py             # Entry point — choose single or multi-stream mode
+    ├── config.py           # Video paths, frame sizes, stream assignments
+    ├── lane_detector.py    # Class-based lane detector for front camera
+    ├── side_detector.py    # Road boundary detector for left/right cameras
+    ├── stream_manager.py   # Orchestrates 3 streams, YOLO thread, grid display
+    ├── walkthrough.md      # Detailed technical walkthrough of multi-stream
+    └── README.md           # Multi-stream module documentation
+```
 
 ## How to run
 
@@ -52,8 +53,6 @@ Processes one video at a time from the front camera:
 ```bash
 python autonomous_car.py
 ```
-
-Select a video from the numbered menu.
 
 ### Multi-stream mode
 
@@ -81,10 +80,11 @@ the same menu.
 
 ## Display
 
-**Single-stream** opens two windows — the final annotated frame and an edge map 
-showing detected boundaries alongside Canny edges.
+**Single-stream** opens two windows — the final annotated frame and an edge map showing detected boundaries alongside Canny edges.
 
 **Multi-stream** opens a single 2×2 grid window:
+
+```
 ┌─────────────┬─────────────┐
 │    FRONT    │    STATS    │
 │             │ fused cmd   │
@@ -92,12 +92,11 @@ showing detected boundaries alongside Canny edges.
 │    LEFT     │    RIGHT    │
 │             │             │
 └─────────────┴─────────────┘
+```
 
-Each cell shows the video frame with lane overlay, YOLO bounding boxes 
-color-coded by distance, and per-stream decision text. The stats panel 
+Each cell shows the video frame with lane overlay, YOLO bounding boxes
+color-coded by distance, and per-stream decision text. The stats panel
 shows the final fused driving command and per-camera status.
-
----
 
 ## Lane detection approach
 
