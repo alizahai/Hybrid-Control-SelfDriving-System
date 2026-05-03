@@ -205,7 +205,6 @@ the ultralytics library. Place your video files in the path specified in
 - Distance estimation uses apparent bounding box size, not a depth sensor. 
   Results are approximate and may be less accurate for very tall objects 
   like trucks.
-- The system was tested under daytime, dry conditions. Performance under 
-  rain, night, or harsh lighting has not been evaluated.
+- The system has not been tested during night.
 - Wide roads where boundaries appear at shallow angles may fall outside 
   the slope filter and go undetected.
