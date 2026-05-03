@@ -175,7 +175,7 @@ pip install opencv-python numpy ultralytics
 
 YOLOv8s weights (`yolov8s.pt`) download automatically on first run via 
 the ultralytics library. Place your video files in the path specified in 
-`autonomous_car.py` or `multi_stream/config.py`.
+`autonomous_car.py` and `multi_stream/config.py`.
 
 ---
 
