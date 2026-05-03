@@ -39,7 +39,6 @@ project/
     ├── lane_detector.py    # Class-based lane detector for front camera
     ├── side_detector.py    # Road boundary detector for left/right cameras
     └── stream_manager.py   # Orchestrates 3 streams, YOLO thread, grid display
-└── README.md               # Documentation
 ```
 
 ## How to run
