@@ -33,15 +33,13 @@ project/
 ├── object_detection.py     # YOLOv8s obstacle detection and road zone check
 ├── decision_making.py      # Rule-based driving decisions and steering logic
 ├── autonomous_car.py       # Single-stream pipeline — main entry point
-│
 └── multi_stream/
     ├── main.py             # Entry point — choose single or multi-stream mode
     ├── config.py           # Video paths, frame sizes, stream assignments
     ├── lane_detector.py    # Class-based lane detector for front camera
     ├── side_detector.py    # Road boundary detector for left/right cameras
-    ├── stream_manager.py   # Orchestrates 3 streams, YOLO thread, grid display
-    ├── walkthrough.md      # Detailed technical walkthrough of multi-stream
-    └── README.md           # Multi-stream module documentation
+    └── stream_manager.py   # Orchestrates 3 streams, YOLO thread, grid display
+└── README.md               # Documentation
 ```
 
 ## How to run
